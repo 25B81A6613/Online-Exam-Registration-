@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Exam Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f6ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 400px;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2457c5;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #2457c5;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #17429d;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Online Exam Registration</h2>
+
+    <form>
+      <label>Student Name</label>
+      <input type="text" placeholder="Enter your name" required>
+
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email" required>
+
+      <label>Roll Number</label>
+      <input type="text" placeholder="Enter roll number" required>
+
+      <label>Select Exam</label>
+      <select required>
+        <option value="">-- Select Exam --</option>
+        <option>Computer Science</option>
+        <option>Mathematics</option>
+        <option>Physics</option>
+        <option>English</option>
+      </select>
+
+      <label>Exam Date</label>
+      <input type="date" required>
+
+      <button type="submit">Register for Exam</button>
+    </form>
+  </div>
+
+</body>
+</html>
